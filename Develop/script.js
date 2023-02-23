@@ -20,8 +20,21 @@ function generatePassword () {
     console.log("How many? " + length);
     //console.log to see that the code is working.  Will probably end up doing this with each var
   }
-  }
   
+
+ 
+  var lowercase = false;
+  var UPPERCASE = false;
+  var numsnums = false;
+  var specchar = false;
+
+  while (!lowercase && !UPPERCASE && !numsnums && !specchar) {
+
+  //It occured to me that nothing would happen when reaching the alert to pick at least one.  That it wouldn't go back to the beginning.
+  //I researched how to do this and learned about the while function.  While any confirm for a variable remains untrue it will keep 
+  //asking for conformation.  The values need to be defaulted to false above to keep asking as long as not one is selected as true.
+
+
 
 var lowercase = confirm("would you like lowercase letters in the password?");
 console.log("Wants lowercase? " + lowercase);
@@ -36,15 +49,32 @@ console.log("Wants special characters? " + specchar);
 //console.log to see that the confirm in fact returns the boolean value
 
 
+if (!lowercase && !UPPERCASE && !numsnums && !specchar) {
+  alert("You gotta pick at least one...");
+}
+ //This should check to make sure that they selected at least one kind of character otherwise it alerts them
+}
 
+var chars = ""
+if (lowercase) chars += "abcdefghijklmnopqrstuvwxyz";
+if (UPPERCASE) chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+if (numsnums) chars += "0123456789";
+if (specchar) chars += "!@#$%^&*()"
 
+var password = "";
+  for (var i = 0; i < length; i++) {
+    password += chars.charAt(Math.floor(Math.random() * chars.length));
+  }
 
-
-
-
-
-
-
+  return password;
+}
+//This is declaring a variable of chars.  Then it defines what child of chars can be.  
+//Next we declare a variable of password.  
+//Then we create a for loop that will add characters until it gets to the # of characters selected.
+//Then javascript does some built in functions now with
+//charAt which returns a string value for the upper and lowercase letters
+//floor which rounds down to a whole integer
+//random which does random math to the characters to get values
 
 
 // Write password to the #password input
