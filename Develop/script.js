@@ -20,7 +20,6 @@ function generatePassword () {
     console.log("How many? " + length);
     //console.log to see that the code is working.  Will probably end up doing this with each var
   }
-  
 
  
   var lowercase = false;
@@ -54,6 +53,7 @@ if (!lowercase && !UPPERCASE && !numsnums && !specchar) {
 }
  //This should check to make sure that they selected at least one kind of character otherwise it alerts them
 }
+
 
 var chars = ""
 if (lowercase) chars += "abcdefghijklmnopqrstuvwxyz";
