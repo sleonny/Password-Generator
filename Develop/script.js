@@ -7,7 +7,7 @@ function generatePassword () {
   var length = prompt("How long do you want your password to be?  Sorry, we can only do between 8 - 128 characters ¯\_(ツ)_/¯");
   //Looked up how to get javascript to ask for an answer and found prompt command.  
   if (isNaN(length) || length < 8 || length > 128) {
-    //isNaN checks if what's entered is a number.  The rest will return boolean and if any are true return the alert.  || means just one needs to be true to return true
+    //isNaN checks if what's entered is a number and returns boolean.  The rest will return boolean and if any are true return the alert.  || means just one needs to be true to return true
     alert("Really?  C'mon...");
     //Looked up how to get user to input valid number if they didn't orginally and used built in function alert 
     return "...";
@@ -16,6 +16,16 @@ function generatePassword () {
   }
   }
   
+var lowercase = confirm("would you like lowercase letters in the password?");
+var UPPERCASE = confirm("WOULD YOU LIKE UPPERCASE LETTERS IN THE PASSWORD?");
+var 
+
+
+
+
+
+
+
 
 // Write password to the #password input
 function writePassword() {
