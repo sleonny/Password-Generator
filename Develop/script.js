@@ -5,17 +5,12 @@
 var generateBtn = document.querySelector("#generate");
 function generatePassword () {
 
-  var length = prompt("How long do you want your password to be?  Sorry, we can only do between 8 - 128 characters (ツ)_/¯");
-  //Looked up how to get javascript to ask for an answer and found prompt command.  
-  if (isNaN(length) || length < 8 || length > 128) {
-    //isNaN checks if what's entered is a number and returns boolean.  The rest will return boolean and if any are true return the alert.  || means just one needs to be true to return true
-=======
-  var length = prompt("How long do you want your password to be?  Sorry, we can only do between 8 - 128 characters ¯\_(ツ)_/¯");
-  //Looked up how to get javascript to ask for an answer and found prompt command.  
+   var length = prompt("How long do you want your password to be?  Sorry, we can only do between 8 - 128 characters ¯\_(ツ)_/¯");
+    //Looked up how to get javascript to ask for an answer and found prompt command.  
   if (isNaN(length) || length < 8 || length > 128) {
 
     //isNaN checks if what's entered is a number and returns boolean.  The rest will return boolean and if any are true return the alert.  || means just one needs to be true to return true
-=======
+
     //isNaN checks if what's entered is a number.  The rest will return boolean and if any are true return the alert.  || means just one needs to be true to return true
 
 
@@ -29,14 +24,16 @@ function generatePassword () {
   
 
 var lowercase = confirm("would you like lowercase letters in the password?");
+console.log("Wants lowercase? " + lowercase);
 var UPPERCASE = confirm("WOULD YOU LIKE UPPERCASE LETTERS IN THE PASSWORD?");
-var 
-=======
-
-var lowercase = confirm("would you like lowercase letters in the password?");
-var UPPERCASE = confirm("WOULD YOU LIKE UPPERCASE LETTERS IN THE PASSWORD?");
+console.log("WANTS UPPERCASE? " + UPPERCASE);
 var numsnums = confirm("How about some numbers in the password?");
+console.log("Wants numbers? " + numsnums);
 var specchar = confirm("&ny speci@l character$ in the p@$$word?");
+console.log("Wants special characters? " + specchar);
+
+//Declared a variable with a boolean return for each kind of character they may want in the password
+//console.log to see that the confirm in fact returns the boolean value
 
 
 
@@ -45,8 +42,9 @@ var specchar = confirm("&ny speci@l character$ in the p@$$word?");
 
 
 
-======
-=======
+
+
+
 
 
 // Write password to the #password input
