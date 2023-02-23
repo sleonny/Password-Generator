@@ -28,7 +28,7 @@ function generatePassword () {
   var numsnums = false;
   var specchar = false;
 
-  while (!lowercase && !UPPERCASE && !numsnums && !specchar) {
+    while (!lowercase && !UPPERCASE && !numsnums && !specchar) {
 
   //It occured to me that nothing would happen when reaching the alert to pick at least one.  That it wouldn't go back to the beginning.
   //I researched how to do this and learned about the while function.  While any confirm for a variable remains untrue it will keep 
