@@ -36,13 +36,13 @@ if (isNaN(length) || length < 8 || length > 128) {
 
 
 
-var lowercase = confirm("would you like lowercase letters in the password?");
+lowercase = confirm("would you like lowercase letters in the password?");
 console.log("Wants lowercase? " + lowercase);
-var UPPERCASE = confirm("WOULD YOU LIKE UPPERCASE LETTERS IN THE PASSWORD?");
+UPPERCASE = confirm("WOULD YOU LIKE UPPERCASE LETTERS IN THE PASSWORD?");
 console.log("WANTS UPPERCASE? " + UPPERCASE);
-var numsnums = confirm("How about some numbers in the password?");
+numsnums = confirm("How about some numbers in the password?");
 console.log("Wants numbers? " + numsnums);
-var specchar = confirm("&ny speci@l character$ in the p@$$word?");
+specchar = confirm("&ny speci@l character$ in the p@$$word?");
 console.log("Wants special characters? " + specchar);
 
 //Declared a variable with a boolean return for each kind of character they may want in the password
