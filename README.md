@@ -37,7 +37,7 @@ box.
 
 ## Link
 
-https://sleonny.github.io/Password-Generator
+https://sleonny.github.io/Password-Generator/
 
 ## Technologies Used
 
