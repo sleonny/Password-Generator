@@ -49,6 +49,10 @@ Google Search Engine
 
 ChatGPT  
 
+## Existing Code Used
+
+Starter code cloned from https://github.com/coding-boot-camp/friendly-parakeet/tree/main/Develop
+
 ## Credit
 
 Sean Leonard
