@@ -41,7 +41,11 @@ https://sleonny.github.io/Password-Generator
 
 ## Technologies Used
 
-VS Code Editor
-Github
-Google Search Engine
-ChatGPT
+VS Code Editor  
+
+Github  
+
+Google Search Engine  
+
+ChatGPT  
+
