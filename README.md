@@ -49,3 +49,11 @@ Google Search Engine
 
 ChatGPT  
 
+## Credit
+
+Sean Leonard
+
+##License
+
+MIT License
+
