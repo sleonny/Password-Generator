@@ -57,7 +57,7 @@ Starter code cloned from https://github.com/coding-boot-camp/friendly-parakeet/t
 
 Sean Leonard
 
-##License
+## License
 
 MIT License
 
